@@ -1,0 +1,58 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'glob' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose node symlink /usr/bin/node
+5 verbose install initial load of /vagrant/package.json
+6 verbose installManyTop reading scoped package data from /vagrant/node_modules/node/package.json
+7 info package.json node@0.0.0 No description
+8 info package.json node@0.0.0 No repository field.
+9 info package.json node@0.0.0 No README data
+10 info package.json node@0.0.0 No license field.
+11 verbose readDependencies loading dependencies from /vagrant/package.json
+12 silly cache add args [ 'glob', null ]
+13 verbose cache add spec glob
+14 silly cache add parsed spec { raw: 'glob',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'glob',
+14 silly cache add   rawSpec: '',
+14 silly cache add   spec: '*',
+14 silly cache add   type: 'range' }
+15 silly addNamed glob@*
+16 verbose addNamed "*" is a valid semver range for glob
+17 silly addNameRange { name: 'glob', range: '*', hasData: false }
+18 silly mapToRegistry name glob
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry http://172.23.238.253:4873/
+21 silly mapToRegistry uri http://172.23.238.253:4873/glob
+22 verbose addNameRange registry:http://172.23.238.253:4873/glob not in flight; fetching
+23 verbose request uri http://172.23.238.253:4873/glob
+24 verbose request no auth needed
+25 info attempt registry request try #1 at 16:55:21
+26 verbose request id 865dfc732082431d
+27 http request GET http://172.23.238.253:4873/glob
+28 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+29 info attempt registry request try #2 at 16:57:38
+30 http request GET http://172.23.238.253:4873/glob
+31 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+32 info attempt registry request try #3 at 17:00:46
+33 http request GET http://172.23.238.253:4873/glob
+34 verbose stack Error: connect ETIMEDOUT
+34 verbose stack     at exports._errnoException (util.js:746:11)
+34 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1010:19)
+35 verbose cwd /vagrant/node/section-04/4.1
+36 error Linux 3.13.0-65-generic
+37 error argv "/usr/bin/node" "/usr/bin/npm" "install" "glob"
+38 error node v0.12.7
+39 error npm  v2.11.3
+40 error code ETIMEDOUT
+41 error errno ETIMEDOUT
+42 error syscall connect
+43 error network connect ETIMEDOUT
+43 error network This is most likely not a problem with npm itself
+43 error network and is related to network connectivity.
+43 error network In most cases you are behind a proxy or have bad network settings.
+43 error network
+43 error network If you are behind a proxy, please make sure that the
+43 error network 'proxy' config is set properly.  See: 'npm help config'
+44 verbose exit [ 1, true ]
